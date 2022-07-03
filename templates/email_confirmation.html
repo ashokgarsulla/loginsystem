@@ -1,0 +1,12 @@
+{% autoescape off %}
+
+Welcome to AG-loginsystem
+
+Hello {{name}} !!
+
+Please confirm your email by click flowing link
+
+confirmation link: http:// {{ domain }}{% url 'activate' uidb64=uid token=token  %}
+{% comment %} Confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}  {% endcomment %}
+
+{% endautoescape %}
