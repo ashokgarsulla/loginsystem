@@ -1,7 +1,7 @@
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ashokkumarbediapci440@gmail.com'
-EMAIL_HOST_PASSWORD = 'hddssfedjjgitash'
+EMAIL_HOST_PASSWORD = 'ydjajmnduetbffwr'
 EMAIL_PORT = 587
 
 # EMAIL_USE_TLS = True
