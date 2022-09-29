@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
-</head>
-<body>
-    <h2 style="color:green;">Email verified</h2>
-    <button style="background-color: green ; padding:5px; color:aliceblue;border-radius: 10px;;" type="submit"> <a style="text-decoration:none;color: white;" href="/auth/signin">Back to Login</a> </button>
-   
-</body>
-</html>
+{% extends 'auth/base.html' %}
+{% block content %}
+<div class="container my-5">
+    <div class="my-5">
+        <h2 style="color:green;">Email verified</h2>
+    <button class="btn btn-success" type="submit"> <a style="text-decoration:none;color: white;" href="/signin">Back to Login</a> </button>
+    </div>
+    
+</div>
+
+{% endblock content %}
+    
