@@ -1,2 +1,12 @@
 *loginsystem/info.py
 *.pyc
+*.pyc
+
+*/*/*/__pycache__/
+
+*/*/__pycache__/
+
+*/__pycache__/
+
+db.sqlite3
+
