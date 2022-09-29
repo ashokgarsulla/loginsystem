@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
-</head>
-<body>
-    <h1>Sign Up</h1>
+{% extends './base.html' %}
+{% block content %}
+<h1>Sign Up</h1>
     <form action="" method="post">
         {% csrf_token %}
         <label for="">username</label>
@@ -29,7 +22,4 @@
         <input type="password" name="pass2" id="pass2" placeholder="re-enter password" required>
         <br>
         <button type="submit">Sign Up</button>
-    </form>
-    
-</body>
-</html>
+    </form>{% endblock content %}

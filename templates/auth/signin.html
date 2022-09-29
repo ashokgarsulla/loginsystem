@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>
-</head>
-<body>
-
-   
-
-    <h1>Sign In</h1>
+{% extends './base.html' %}
+{% block content %}
+<h1>Sign In</h1>
     {% for message in messages %}
     <div style="color: red;" class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
         <strong>Message:</strong> {{ message }}
@@ -35,6 +25,4 @@
        <a href="forgot">forgot password</a>
         
     </form>
-    
-</body>
-</html>
+{% endblock content %}
