@@ -1,4 +1,5 @@
 {% extends './base.html' %}
+{% load static %}
 {% block content %}
 <div class="container my-5 py-5">
 
@@ -13,6 +14,8 @@
     </div>
     {% endfor %}
 
+   
+
     {% if user.is_authenticated %}
     <h2>Hello {{fname}}</h2>
     <h3>You are Successfully loged in.......</h3>
@@ -22,5 +25,6 @@
     <button class="btn btn-primary" type="submit"> <a class="text-decoration-none text-white" href="signup">Sign Up</a> </button>
     <button class="btn btn-primary" type="submit"><a class="text-decoration-none text-white" href="signin">Sign In</a> </button>
     {% endif %}
+    
 </div>
 {% endblock content %}
