@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
-</head>
-<body>
-    <h2 style="color:green;">Email verified</h2>
-    <button style="background-color: green ; padding:5px; color:aliceblue;border-radius: 10px;;" type="submit"> <a style="text-decoration:none;color: white;" href="/auth/signin">Back to Login</a> </button>
-   
-</body>
-</html>
+{% extends 'auth/base.html' %}
+{% block content %}
+<div class="container my-5">
+    
+    <div >
+        
+        
+    </div>
+    <div class="py-5 mx-auto text-success text-center">
+        <h1>Email verified</h1>
+        <iframe class="w-100 " width ="200" src="https://embed.lottiefiles.com/animation/114253"></iframe>
+        <h3>Your Account is Activated, Now You can Login</h3>
+    <button class="btn btn-success w-100 my-3" type="submit"> <a class="text-decoration-none text-white" href="/signin">click here to Login</a> </button>
+    </div>
+    
+</div>
+
+{% endblock content %}
+    
