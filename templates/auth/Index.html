@@ -1,6 +1,9 @@
 {% extends './base.html' %}
 {% block content %}
-<h1>This is Login System Page</h1>
+<div class="container my-5 py-5">
+
+    <div class="bg-dark text-white py-3 px-2 mb-2"><h1 >This is Login System Page</h1></div>
+    
     {% for message  in messages  %}
     <div class="alert alert-{{ message.tags }} alert-dimissible fade show "  role="alert">
         <strong>Message:</strong> {{message}}
@@ -13,10 +16,11 @@
     {% if user.is_authenticated %}
     <h2>Hello {{fname}}</h2>
     <h3>You are Successfully loged in.......</h3>
-    <button type="submit"> <a href="signout">Sign Out</a> </button>
+    <button class="btn btn-primary" type="submit"> <a class="text-decoration-none text-white" href="signout">Sign Out</a> </button>
     {% else %}
     
-    <button type="submit"> <a href="signup">Sign Up</a> </button>
-    <button type="submit"><a href="signin">Sign In</a> </button>
+    <button class="btn btn-primary" type="submit"> <a class="text-decoration-none text-white" href="signup">Sign Up</a> </button>
+    <button class="btn btn-primary" type="submit"><a class="text-decoration-none text-white" href="signin">Sign In</a> </button>
     {% endif %}
+</div>
 {% endblock content %}
